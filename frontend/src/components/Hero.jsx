@@ -13,7 +13,7 @@ export function Hero() {
       <div className="relative min-h-[500px] md:min-h-[88svh]">
         <img
           src="/images/hero-lobby.jpg"
-          alt="Vian Inn lobby with teal glass door"
+          alt="Vian Inn teal glass door and checkered lobby"
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-ink/75 via-ink/40 to-ink/10" />

@@ -6,14 +6,14 @@ const rooms = [
     detail: '2 single beds · 17 sq m · City view',
     copy: 'Two crisp beds, a work desk, and a teal runner. Built for colleagues, siblings, or an easy overnight before the morning train.',
     price: 'From ₹1,967',
-    image: '/images/twin-beds.jpg',
+    image: '/images/deluxe-twin.jpg',
   },
   {
     name: 'Deluxe Double',
     detail: '1 double bed · 17 sq m · City view',
     copy: 'A quieter room for two. Attached bath, wardrobe, kettle, and a flat screen — the essentials, done cleanly.',
     price: 'From ₹1,967',
-    image: '/images/double-room.jpg',
+    image: '/images/deluxe-double.jpg',
   },
 ]
 

@@ -40,8 +40,8 @@ export function Location() {
           </div>
         </div>
         <img
-          src="/images/street.jpg"
-          alt="Vian Inn on Assam Trunk Road"
+          src="/images/brand-sign.jpg"
+          alt="Vian Inn Food & Stay backlit sign"
           className="h-full min-h-[360px] w-full object-cover"
         />
       </div>

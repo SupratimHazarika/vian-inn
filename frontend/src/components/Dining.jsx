@@ -5,8 +5,8 @@ export function Dining() {
     <section id="dining" className="bg-teal-dark text-cream">
       <div className="mx-auto grid max-w-6xl items-stretch md:grid-cols-2">
         <img
-          src="/images/restaurant.jpg"
-          alt="Vian Kitchen dining room"
+          src="/images/dining-hall.jpg"
+          alt="Vian Kitchen dining hall"
           className="h-full min-h-[420px] w-full object-cover"
         />
         <div className="flex flex-col justify-center px-5 py-16 md:px-14">

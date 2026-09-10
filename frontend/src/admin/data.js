@@ -43,15 +43,12 @@ export const guests = [
 ]
 
 export const gallery = [
-  { src: '/images/hero-lobby.jpg', label: 'Lobby door', used: 'Hero' },
-  { src: '/images/street.jpg', label: 'Assam Trunk Road', used: 'Contact' },
-  { src: '/images/guest-room.jpg', label: 'Deluxe Twin', used: 'Gallery' },
-  { src: '/images/twin-beds.jpg', label: 'Twin beds', used: 'Rooms' },
-  { src: '/images/twin-tv.jpg', label: 'Twin with TV', used: 'Gallery' },
-  { src: '/images/double-room.jpg', label: 'Deluxe Double', used: 'Rooms' },
-  { src: '/images/bedroom-window.jpg', label: 'Double window', used: 'Gallery' },
-  { src: '/images/restaurant.jpg', label: 'Green booth', used: 'Dining' },
-  { src: '/images/dining.jpg', label: 'Checkered floor', used: 'Gallery' },
-  { src: '/images/bathroom.jpg', label: 'Attached bath', used: 'Gallery' },
+  { src: '/images/hero-lobby.jpg', label: 'Lobby door', used: 'Hero · Gallery' },
+  { src: '/images/brand-sign.jpg', label: 'Brand sign', used: 'Contact' },
+  { src: '/images/deluxe-twin.jpg', label: 'Deluxe Twin', used: 'Rooms · Gallery' },
+  { src: '/images/twin-wardrobe.jpg', label: 'Wardrobe & TV', used: 'Gallery' },
+  { src: '/images/deluxe-double.jpg', label: 'Deluxe Double', used: 'Rooms · Gallery' },
+  { src: '/images/dining-hall.jpg', label: 'Dining hall', used: 'Dining · Gallery' },
+  { src: '/images/attached-bath.jpg', label: 'Attached bath', used: 'Gallery' },
   { src: '/images/kitchen.jpg', label: 'Kitchen angle', used: 'Unused' },
 ]

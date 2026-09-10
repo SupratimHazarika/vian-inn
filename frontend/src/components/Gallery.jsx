@@ -1,10 +1,10 @@
 const shots = [
-  ['/images/guest-room.jpg', 'Twin room'],
-  ['/images/twin-tv.jpg', 'Room with television'],
-  ['/images/dining.jpg', 'Vian Kitchen'],
-  ['/images/bedroom-window.jpg', 'Double room'],
-  ['/images/bathroom.jpg', 'Attached bath'],
-  ['/images/street.jpg', 'Assam Trunk Road'],
+  ['/images/deluxe-twin.jpg', 'Deluxe Twin room'],
+  ['/images/twin-wardrobe.jpg', 'Wardrobe and television'],
+  ['/images/dining-hall.jpg', 'Vian Kitchen'],
+  ['/images/deluxe-double.jpg', 'Deluxe Double room'],
+  ['/images/attached-bath.jpg', 'Attached bath'],
+  ['/images/hero-lobby.jpg', 'Lobby entrance'],
 ]
 
 export function Gallery() {
