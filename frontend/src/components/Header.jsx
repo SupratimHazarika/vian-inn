@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { useContactModal } from '@/components/ContactModal'
 
 const links = [
   ['Rooms', '#rooms'],
@@ -12,6 +13,7 @@ const links = [
 
 export function Header() {
   const [open, setOpen] = useState(false)
+  const { openContact } = useContactModal()
 
   return (
     <header className="sticky top-0 z-50 border-b border-line/70 bg-cream/95 backdrop-blur-md">
@@ -32,10 +34,15 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <Button variant="outline" size="sm" type="button">
+          <Button
+            variant="outline"
+            size="sm"
+            type="button"
+            onClick={() => openContact('table')}
+          >
             Book a table
           </Button>
-          <Button size="sm" type="button">
+          <Button size="sm" type="button" onClick={() => openContact('room')}>
             Book a room
           </Button>
         </div>
@@ -60,10 +67,25 @@ export function Header() {
             ))}
           </nav>
           <div className="mt-6 flex gap-3">
-            <Button variant="outline" className="flex-1" type="button">
+            <Button
+              variant="outline"
+              className="flex-1"
+              type="button"
+              onClick={() => {
+                setOpen(false)
+                openContact('table')
+              }}
+            >
               Book a table
             </Button>
-            <Button className="flex-1" type="button">
+            <Button
+              className="flex-1"
+              type="button"
+              onClick={() => {
+                setOpen(false)
+                openContact('room')
+              }}
+            >
               Book a room
             </Button>
           </div>

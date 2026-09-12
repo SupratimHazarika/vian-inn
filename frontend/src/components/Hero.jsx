@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button'
+import { useContactModal } from '@/components/ContactModal'
 
 const bookingFields = [
   ['Check-in', '12:00 PM'],
@@ -8,6 +9,8 @@ const bookingFields = [
 ]
 
 export function Hero() {
+  const { openContact } = useContactModal()
+
   return (
     <section id="top" className="relative overflow-hidden">
       <div className="relative min-h-[500px] md:min-h-[88svh]">
@@ -30,10 +33,15 @@ export function Hero() {
             and Chinese downstairs.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 pb-4">
-            <Button size="lg" type="button">
+            <Button size="lg" type="button" onClick={() => openContact('room')}>
               Book a room
             </Button>
-            <Button size="lg" variant="cream" type="button">
+            <Button
+              size="lg"
+              variant="cream"
+              type="button"
+              onClick={() => openContact('table')}
+            >
               View the kitchen
             </Button>
           </div>
@@ -45,14 +53,17 @@ export function Hero() {
           {bookingFields.map(([label, value], i) => {
             const isSearch = label === 'Search'
             return (
-              <div
+              <button
                 key={label}
+                type="button"
+                onClick={isSearch ? () => openContact('room') : undefined}
                 className={[
-                  'px-5 py-4',
+                  'px-5 py-4 text-left',
                   isSearch ? 'bg-teal text-white' : 'bg-white',
                   i % 2 === 0 ? 'border-r border-line' : '',
                   i < 2 ? 'border-b border-line md:border-b-0' : '',
                   !isSearch && i < 3 ? 'md:border-r' : '',
+                  isSearch ? 'cursor-pointer transition hover:bg-teal-dark' : '',
                 ].join(' ')}
               >
                 <p
@@ -61,7 +72,7 @@ export function Hero() {
                   {label}
                 </p>
                 <p className="mt-1 text-sm font-medium">{value}</p>
-              </div>
+              </button>
             )
           })}
         </div>

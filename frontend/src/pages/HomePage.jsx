@@ -1,4 +1,5 @@
 import { Amenities } from '@/components/Amenities'
+import { ContactModalProvider } from '@/components/ContactModal'
 import { Dining } from '@/components/Dining'
 import { Explore } from '@/components/Explore'
 import { Footer } from '@/components/Footer'
@@ -13,21 +14,23 @@ import { Rooms } from '@/components/Rooms'
 
 export function HomePage() {
   return (
-    <div className="min-h-svh bg-cream text-ink">
-      <Header />
-      <main>
-        <Hero />
-        <Highlights />
-        <Rooms />
-        <Dining />
-        <Amenities />
-        <Explore />
-        <Gallery />
-        <Reviews />
-        <MustKnows />
-        <Location />
-      </main>
-      <Footer />
-    </div>
+    <ContactModalProvider>
+      <div className="min-h-svh bg-cream text-ink">
+        <Header />
+        <main>
+          <Hero />
+          <Highlights />
+          <Rooms />
+          <Dining />
+          <Amenities />
+          <Explore />
+          <Gallery />
+          <Reviews />
+          <MustKnows />
+          <Location />
+        </main>
+        <Footer />
+      </div>
+    </ContactModalProvider>
   )
 }

@@ -1,6 +1,9 @@
 import { Button } from '@/components/ui/button'
+import { useContactModal } from '@/components/ContactModal'
 
 export function Dining() {
+  const { openContact } = useContactModal()
+
   return (
     <section id="dining" className="bg-teal-dark text-cream">
       <div className="mx-auto grid max-w-6xl items-stretch md:grid-cols-2">
@@ -28,7 +31,11 @@ export function Dining() {
             <li>Packed lunches for early trains</li>
           </ul>
           <div className="mt-10">
-            <Button variant="cream" type="button">
+            <Button
+              variant="cream"
+              type="button"
+              onClick={() => openContact('table')}
+            >
               Book a table
             </Button>
           </div>
